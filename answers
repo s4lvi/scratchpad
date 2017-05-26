@@ -1,20 +1,11 @@
-
-Refactor the following pseudo code, correct if necessary.
-
-$id = $request['id']; $result = query($conn, "SELECT * FROM testdb WHERE id = $id");
-
+1)
 $id = $_REQUEST['id'];
 $result = query($conn, "SELECT * FROM testdb WHERE id = '{$id}'");
 
----
-Given the following, What is the value of $b, what is the value of $a, why is that the value?
-
-function doSomething ( &$arg ) { $return = $arg; $arg += 1; return $return; }
-
-$a = 3; $b = doSomething( $a );
-
-
+2)
 the value of $b is 3, and the value of $a is 4, because $a is passed by reference to doSomething(&$arg). 
 this function immediately assigns the current value of $arg to $return, then increments the variable that $arg is referencing, and returns $return which holds the original value of $arg (in this case 3).
 
+3) code is in file_parser.php
 
+4) code is in int_to_roman.php
