@@ -1,3 +1,4 @@
+
 Refactor the following pseudo code, correct if necessary.
 
 $id = $request['id']; $result = query($conn, "SELECT * FROM testdb WHERE id = $id");
@@ -15,22 +16,3 @@ the value of $b is 3, and the value of $a is 4, because $a is passed by referenc
 this function immediately assigns the current value of $arg to $return, then increments the variable that $arg is referencing, and returns $return which holds the original value of $arg (in this case 3).
 
 
----
-Parse the included file and output in the format below. This should be a command line tool. Create the parsing code as a library so that it may be used by other applications (Hint: OOP). Bonus (optional): Design so that other file formats (xml, json) can be used in the future with ease.
-
-Use the following format for displaying results from the command line application.
-
-<id> <name> (<quantity>)
-- <category 1>
-- <category 2>
-- <category n...>
-Example:
-
-68-OX-YH94 Carrot (5)
-- vegetable
-- green
-- orange
-- skinny
-
----
-Implement a function to convert an integer to roman numeral function. It should allow a custom format for 1 and 5 (e.g. 1=Z, 5=P). Bonus (optional) Use an object oriented approach.
