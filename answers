@@ -4,7 +4,7 @@ Refactor the following pseudo code, correct if necessary.
 $id = $request['id']; $result = query($conn, "SELECT * FROM testdb WHERE id = $id");
 
 $id = $_REQUEST['id'];
-$result = query($conn, "SELECT * FROM testdb WHERE id = {$id}");
+$result = query($conn, "SELECT * FROM testdb WHERE id = '{$id}'");
 
 ---
 Given the following, What is the value of $b, what is the value of $a, why is that the value?
