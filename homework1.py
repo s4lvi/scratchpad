@@ -1,13 +1,16 @@
 def mdp(states):
-    return 1
+		output = 1
+		print('running mdp')
+		print('N:', len(states), 'isBadSide:', states, 'Output:',output)
+		return output
 
 
 def test(states, expected):
     actual = mdp(states)
-    print('test', 'succeeded' if actual == expected else 'failed', '- expected:', expected, 'actual:', actual)
+    print('test', 'succeeded' if actual == expected else 'failed', '- expected:', expected, 'actual:', actual, '\n')
 
 def test_runner():
-    state1 = [1,1,1,1,0,0,0,0,1,0,1,0,1,1,0,1,0,0,0,1,0]
+    state1 = [1,jnj1,1,1,0,0,0,0,1,0,1,0,1,1,0,1,0,0,0,1,0]
     result1 = 7.3799
     test(state1, result1)
 
