@@ -1,0 +1,17 @@
+html {
+    font-family: Verdana, Geneva, sans-serif;
+    color: rgb(55, 113, 131);
+    text-align: center;
+}
+
+.card {
+    border: 4px solid rgb(55, 113, 131);
+    margin: 2em;
+    padding: 2em;
+    border-radius: 12px;
+}
+
+li {
+    text-align: right;
+    list-style: none;
+}

@@ -1,5 +1,14 @@
 var workouts = new Map();
 
+var form = document.getElementById("form");
+
+function handleForm(event) { 
+    event.preventDefault(); 
+} 
+
+form.addEventListener('submit', handleForm);
+
+
 function update() {
     let type = document.getElementById("workout-input");
     if (type.value != "") {
