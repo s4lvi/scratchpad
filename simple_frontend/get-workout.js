@@ -5,10 +5,13 @@ const db = client.getServiceClient(stitch.RemoteMongoClient.factory, 'mongodb-at
 client.auth.loginWithCredential(new stitch.AnonymousCredential()).then(() =>
   db.collection('exercises').find().asArray()
 ).then(docs => {
-    let exerciseList = document.getElementById("workout-list");
-    let selectedExercises = docs;
-    for (let exercise of selectedExercises) {
-        exerciseList.innerHTML += "<li>" + exercise["name"] + "</li>";
+    if (docs.length > 0) {
+        document.getElementById("workout-container").removeAttribute("hidden");
+        let exerciseList = document.getElementById("workout-list");
+        let selectedExercises = docs;
+        for (let exercise of selectedExercises) {
+            exerciseList.innerHTML += "<li>" + exercise["name"] + "</li>";
+        }
     }
 }).catch(err => {
   console.error(err)
