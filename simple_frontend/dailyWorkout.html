@@ -9,8 +9,41 @@
         <div class="pure-g" id="configuration">
             <div class="card pure-u-1-1">
                 <h2>Configuration</h2>
-                <form>
-
+                <form class="pure-form" id="form"> 
+                    <div class="pure-g">
+                        <div class="pure-u-1-4">
+                            <label for="num-exercises">
+                                Select Number of Exercises:
+                            </label>
+                            <select id="num-exercises">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5" selected>5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select> 
+                        </div>
+                        <div class="pure-u-1-4">
+                            <label for="type-exercises">
+                                Select Exercise Focus:
+                            </label>
+                            <select id="type-exercises">
+                                <option value="upper">Upper Body</option>
+                                <option value="lower">Lower Body</option>
+                                <option value="core">Core</option>
+                                <option value="mix" selected>Mix</option>
+                            </select> 
+                        </div>
+                        <div class="pure-u-1-4"></div>
+                        <div class="pure-u-1-4">
+                            <button class="pure-button" onclick="generate()">Generate</button>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
