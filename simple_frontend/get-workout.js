@@ -34,7 +34,11 @@ function generate() {
           let sets = 5;
           for (let exercise of exerciseSubset) {
               let totalSets = sets; //Math.round(Math.random()) + sets;
-              exerciseListElement.innerHTML += "<li>" + exercise["name"] + " - " + totalSets + " sets of " + exercise["repetitions"] + "</li>";
+              exerciseListElement.innerHTML += "<li>" + exercise["name"] + " - " + totalSets + " sets of " + exercise["repetitions"];
+              for (let i = 0; i < totalSets; i++) {
+                exerciseListElement.innerHTML += "<input type='checkbox'>";
+              } 
+              exerciseListElement.innerHTML += "</li>";
           }
       }
   }).catch(err => {
